@@ -5,7 +5,7 @@ def generate_knapsack_schedule(subjects, time_limit):
     Applies a fatigue penalty to reduce the value of later sessions.
     """
     sessions = []
-    fatigue_penalty = 0.1  # 10% value drop per additional session (fatigue effect)
+    fatigue_penalty = 0.1  
 
     for subject in subjects:
         base_duration = 30 + (subject.complexity * 10)  # base duration varies with complexity
